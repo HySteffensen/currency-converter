@@ -3,5 +3,5 @@
 
   var ApplicationUi = require("./ui/application_ui.js");
 
-  React.renderComponent(new ApplicationUi(), document.body);
+  ReactDOM.render(new ApplicationUi(), document.body);
 }());
