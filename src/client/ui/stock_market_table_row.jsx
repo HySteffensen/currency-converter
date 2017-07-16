@@ -2,6 +2,8 @@
 
 "use strict";
 
+  var React = require("./react-15.3.1.js");
+
   var StockMarketTableRow = React.createClass({displayName: 'StockMarketTableRow',
     render: function() {
       return React.DOM.tr(null,

@@ -1,12 +1,12 @@
 {
-  "name": "react-financial-reports",
+  "name": "currency-converter",
   "version": "1.0.0",
   "private": true,
   "engines": {
     "node": "6.10.1"
   },
   "devDependencies": {
-    "browserify": "^5.9.1",
+    "browserify": "^14.4.0",
     "commonjs": "0.0.1",
     "expect.js": "^0.3.1",
     "http-server": "^0.10.0",
@@ -17,7 +17,7 @@
     "karma-expect": "^1.1.0",
     "karma-mocha": "^0.1.6",
     "mocha": "^1.21.3",
-    "react-tools": "^0.11.1",
+    "react-tools": "^0.13.3",
     "shelljs": "^0.3.0",
     "simplebuild-jshint": "^0.3.0",
     "simplebuild-karma": "^0.8.1"

@@ -3,6 +3,7 @@
 "use strict";
 
 var StockMarketRow = require("./stock_market_table_row");
+var React = require("./react-15.3.1.js");
 
 var StockMarketTable = React.createClass({ displayName: 'StockMarketTable',
   render: function() {
