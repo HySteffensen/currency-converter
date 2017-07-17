@@ -5,15 +5,29 @@
 
   var ReactDOM = require("./react-dom-15.3.1.js");
 
-  var HelloMessage = React.createClass({
+  var CurrencyConverterTable = React.createClass({
     render: function() {
-      return <h1> Hello {this.props.message}!</h1>;
+      return (
+        <div id="table">
+
+        </div>
+      );
+    }
+  });
+
+  var ApplicationUi = React.createClass({
+    render: function() {
+      return(
+        <div>
+          <CurrencyConverterTable />
+        </div>
+      )
     }
   });
 
   ReactDOM.render(
-    <HelloMessage message="World" />,
-    document.getElementById('root')
+    <ApplicationUi />,
+    document.getElementById('app')
   );
 
 }());
