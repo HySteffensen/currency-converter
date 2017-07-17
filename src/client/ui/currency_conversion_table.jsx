@@ -15,10 +15,12 @@
 
 						<div id="dropdown-container">
 						  <div id="dropdown-right">
+						    <p> FROM </p>
 						    <DropdownMenu idValue="2" />
 						  </div>
 
 						  <div id="dropdown-left">
+						    <p> TO </p>
 						    <DropdownMenu idValue="1" />
 						  </div>
 						</div>

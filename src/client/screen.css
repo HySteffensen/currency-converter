@@ -43,22 +43,25 @@
   position: relative;
   left: 30px;
   width: 140px;
-  height: 60px;
   overflow:auto;
 }
 
 #dropdown-right {
   width: 140px;
-  height: 60px;
   position: relative;
   float:right;
 }
 
 .select {
   width: 140px;
-  height: 60px;
+  height: 70px;
   font-size: 25px;
   color: lightgray;
   background-color: white;
   border: 0px;
+}
+
+p {
+  color: gray;
+  margin-bottom: 6px;
 }
