@@ -24,3 +24,15 @@
 #container img {
  width: 100%;
 }
+
+#angle-down {
+    position: relative;
+}
+
+/*replace the content value with the
+corresponding value from the list below*/
+
+#angle-down:before {
+    content:"^";
+    transform:rotate(90deg)
+}
