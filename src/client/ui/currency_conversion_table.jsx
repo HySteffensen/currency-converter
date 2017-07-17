@@ -2,16 +2,7 @@
 	"use strict";
 
 		var CurrencyConversionPicture = require('./currency_conversion_picture.js');
-
-		var DropdownMenu = React.createClass({
-			render: function() {
-				return (
-					<div id="angle-down"></div>
-				)
-			}
-		});
-
-
+    var DropdownMenu = require('./dropdown_menu.js');
 
 	  var CurrencyConversionTable = React.createClass({
       render: function() {
