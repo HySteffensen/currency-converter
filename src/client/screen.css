@@ -1,8 +1,26 @@
 #table {
-    border:1px solid #aaa;
-    margin:10px;
-    padding:10px;
-    height: 600px;
-    width:360px;
-    box-shadow:2px 2px 3px #888;
+  border: 1px solid #aaa;
+  margin: 10px;
+  height: 600px;
+  width: 360px;
+  box-shadow: 2px 2px 3px #888;
+  background-color: RGB(240, 240, 240);
+}
+
+#left-top-margin {
+	height: 150px;
+  width: 30px;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  background-color: RGB(155, 155, 155);
+}
+
+#container {
+	width: 360px;
+	height: 200px;
+}
+
+#container img {
+ width: 100%;
 }
