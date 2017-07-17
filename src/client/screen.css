@@ -57,4 +57,8 @@
 .select {
   width: 140px;
   height: 60px;
+  font-size: 25px;
+  color: lightgray;
+  background-color: white;
+  border: 0px;
 }
