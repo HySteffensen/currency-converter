@@ -4,7 +4,7 @@
 		var CurrencyConversionPicture = React.createClass({
 			render: function() {
 				return(
-			    <div id="container">
+			    <div id="picture-container">
               <img src="/cc-pic.jpg" alt="" />
           </div>
 				)

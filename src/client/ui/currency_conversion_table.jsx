@@ -9,7 +9,22 @@
         return (
           <div id="table">
 						<CurrencyConversionPicture />
-						<DropdownMenu />
+
+
+
+
+						<div id="dropdown-container">
+						  <div id="dropdown-right">
+						    <DropdownMenu idValue="2" />
+						  </div>
+
+						  <div id="dropdown-left">
+						    <DropdownMenu idValue="1" />
+						  </div>
+						</div>
+
+
+
           </div>
         );
       }

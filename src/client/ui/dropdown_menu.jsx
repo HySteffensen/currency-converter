@@ -4,7 +4,13 @@
   		var DropdownMenu = React.createClass({
   			render: function() {
   				return (
-  					<div id="angle-down"></div>
+  					<div>
+              <select className="select" id={this.props.idValue}>
+                <option>USA</option>
+                <option>EU</option>
+                <option>AUS</option>
+              </select>
+            </div>
   				)
   			}
   		});
