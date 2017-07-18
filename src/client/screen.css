@@ -7,18 +7,9 @@
   background-color: RGB(240, 240, 240);
 }
 
-#left-top-margin {
-	height: 150px;
-  width: 30px;
-  padding: 0px;
-  margin: 0px;
-  border: 0px;
-  background-color: RGB(155, 155, 155);
-}
-
 #picture-container {
 	width: 360px;
-	height: 200px;
+	height: 180px;
 }
 
 #picture-container img {
@@ -54,14 +45,48 @@
 
 .select {
   width: 140px;
-  height: 70px;
-  font-size: 25px;
-  color: lightgray;
+  height: 40px;
+  font-size: 20px;
+  color: gray;
   background-color: white;
   border: 0px;
+  padding-left: 10px;
 }
 
 p {
   color: gray;
   margin-bottom: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-title {
+  color: gray;
+  margin-bottom: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 30px;
+}
+
+.input-box {
+	right: 30px;
+	width: 292px;
+	margin-left: 30px;
+	border: 0px;
+	height: 40px;
+	font-size: 18px;
+	color: gray;
+	padding-left: 10px;
+}
+
+.input-button {
+	width: 292px;
+	height: 40px;
+	font-size: 13px;
+	color: white;
+	background-color: RGB(117, 134, 192);
+	margin-left: 30px;
+	border-radius: 25px;
+	border: 0px !important;
+	margin-top: 20px;
+
+
 }
