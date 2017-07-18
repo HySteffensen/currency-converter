@@ -16,19 +16,9 @@
  width: 100%;
 }
 
-
-
-
-
-
-
 #dropdown-container {
   width: 330px;
-
 }
-
-
-
 
 #dropdown-left {
   position: relative;
@@ -87,6 +77,4 @@ p {
 	border-radius: 25px;
 	border: 0px !important;
 	margin-top: 20px;
-
-
 }
