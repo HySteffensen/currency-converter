@@ -7,7 +7,7 @@
 			    <div id="picture-container">
               <img src="/cc-pic.jpg" alt="" />
           </div>
-				)
+				);
 			}
 
 		});

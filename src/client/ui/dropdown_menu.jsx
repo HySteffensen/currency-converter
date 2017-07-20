@@ -11,7 +11,7 @@
                 <option>AUS</option>
               </select>
             </div>
-  				)
+  				);
   			}
   		});
 
