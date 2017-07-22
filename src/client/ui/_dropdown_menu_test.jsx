@@ -7,8 +7,17 @@
 
   describe("Dropdown Menu", function() {
     it("tests static HTML", function() {
-      var rendered = ReactDOMServer.renderToStaticMarkup(<DropdownMenu />);
-      dump(rendered);
+      var rendered = ReactDOMServer.renderToStaticMarkup(<DropdownMenu idValue="1" />);
+      expect(rendered).to.equal( '' +
+      '<div>' +
+        '<select class="select" id="1">' +
+          '<option>USA</option>' +
+          '<option>EU</option>' +
+          '<option>AUS</option>' +
+        '</select>' +
+      '</div>'
+      );
+      //dump(rendered);
     });
   });
 
