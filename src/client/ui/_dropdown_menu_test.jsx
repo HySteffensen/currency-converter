@@ -1,11 +1,14 @@
 (function() {
   "use strict";
 
-  var TestUtils = React.addons.TestUtils;
+  var ReactDOMServer = require("./../react-dom-server-15.3.1.js");
+  //var TestUtils = React.addons.TestUtils;
+  var DropdownMenu = require('./dropdown_menu');  
 
-  describe("Something", function() {
-    it("something", function() {
-
+  describe("Dropdown Menu", function() {
+    it("tests static HTML", function() {
+      var rendered = ReactDOMServer.renderToStaticMarkup(<DropdownMenu />);
+      dump(rendered);
     });
   });
 
