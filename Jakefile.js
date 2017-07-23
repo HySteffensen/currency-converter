@@ -138,6 +138,7 @@
 		shell.cp(VENDOR_DIR + "/react-15.3.1.js", COLLATED_CLIENT_DIR);
 		shell.cp(VENDOR_DIR + "/react-dom-15.3.1.js", COLLATED_CLIENT_DIR);
 		shell.cp(VENDOR_DIR + "/react-dom-server-15.3.1.js", COLLATED_CLIENT_DIR);
+		shell.cp(VENDOR_DIR + "/react-with-addons-15.3.1.js", COLLATED_CLIENT_DIR);
 		process.stdout.write("\n");
 	});
 

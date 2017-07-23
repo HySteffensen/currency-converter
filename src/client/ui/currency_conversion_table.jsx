@@ -12,17 +12,15 @@
 						<CurrencyConversionPicture />
 						<div id="dropdown-container">
 						  <div id="dropdown-right">
-						    <p> TO </p>
-						    <DropdownMenu idValue="2" />
+						    <DropdownMenu name="TO" idValue="2" />
 						  </div>
 
 						  <div id="dropdown-left">
-						    <p> FROM </p>
-						    <DropdownMenu idValue="1" />
+						    <DropdownMenu name="FROM" idValue="1" />
 						  </div>
 						</div>
 						<div>
-							<InputBox />
+							<InputBox name="AMOUNT"/>
 						</div>
           </div>
         );
@@ -32,6 +30,3 @@
 		module.exports = CurrencyConversionTable;
 
 }());
-
-// http://apps.eky.hk/css-triangle-generator/
-// http://www.cssarrowplease.com/
