@@ -15,9 +15,20 @@
     });
 
     it("displays label", function() {
-      expect(TestUtils.findRenderedDOMComponentWithTag(field, "label").innerText).to.equal("AMOUNT");
-      //dump(field);
+      expect(label()).to.equal("AMOUNT");
     });
+
+    it("displays initial value", function() {
+      expect(input()).to.equal("123");
+    });
+
+    function input() {
+      return TestUtils.findRenderedDOMComponentWithTag(field, "input").value;
+    }
+
+    function label() {
+      return TestUtils.findRenderedDOMComponentWithTag(field, "label").innerText;
+    }
   });
 
 }());

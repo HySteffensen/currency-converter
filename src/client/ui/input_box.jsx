@@ -8,7 +8,7 @@
         return (
           <div className="input-form-container">
             <label>{this.props.name}</label>
-            <input className="input-box"></input>
+            <input className="input-box" value={this.props.value}></input>
             <br></br>
             < ConvertButton />
           </div>
