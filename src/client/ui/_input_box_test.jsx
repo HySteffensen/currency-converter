@@ -6,18 +6,12 @@
 
   describe("InputBox", function() {
     var field;
-    var eventTriggered;
 
     beforeEach(function() {
       field = TestUtils.renderIntoDocument(<InputBox
         name="AMOUNT"
         value={ "123" }
-        onChange={changeHandler}
       />);
-
-      function changeHandler(newValue) {
-        eventTriggered = newValue;
-      }
     });
 
     it("displays label", function() {
