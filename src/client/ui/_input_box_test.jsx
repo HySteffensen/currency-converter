@@ -10,24 +10,24 @@
     beforeEach(function() {
       field = TestUtils.renderIntoDocument(<InputBox
         name="AMOUNT"
-        value={ "123" }
+        initialValue={ "123" }
       />);
     });
 
     it("displays label", function() {
-      expect(label()).to.equal("AMOUNT");
+      expect(label().innerText).to.equal("AMOUNT");
     });
 
     it("displays initial value", function() {
-      expect(input()).to.equal("123");
+      expect(input().value).to.equal("123");
     });
 
     function input() {
-      return TestUtils.findRenderedDOMComponentWithTag(field, "input").value;
+      return TestUtils.findRenderedDOMComponentWithTag(field, "input");
     }
 
     function label() {
-      return TestUtils.findRenderedDOMComponentWithTag(field, "label").innerText;
+      return TestUtils.findRenderedDOMComponentWithTag(field, "label");
     }
   });
 
