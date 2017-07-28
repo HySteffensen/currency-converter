@@ -9,11 +9,14 @@
           value: this.props.initialValue
         };
       },
+      handleChange: function handleChange(event) {
+        this.setState({ value: event.target.value });
+      },
       render: function() {
         return (
           <div className="input-form-container">
             <label>{this.props.name}</label>
-            <input className="input-box" value={this.props.initialValue}></input>
+            <input className="input-box" value={this.state.value} onChange={this.handleChange}></input>
             <br></br>
             < ConvertButton />
           </div>

@@ -10,7 +10,7 @@
     beforeEach(function() {
       field = TestUtils.renderIntoDocument(<InputBox
         name="AMOUNT"
-        initialValue={ "123" }
+        initialValue="123"
       />);
     });
 
@@ -20,6 +20,11 @@
 
     it("displays initial value", function() {
       expect(input().value).to.equal("123");
+    });
+
+    it("handles change", function() {
+      TestUtils.Simulate.change(input(), { target: {value: "foo"} });
+      expect(input().value).to.equal("foo");
     });
 
     function input() {
