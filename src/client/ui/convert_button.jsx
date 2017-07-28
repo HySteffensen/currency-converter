@@ -12,7 +12,7 @@
     render: function() {
       return(
         <div>
-          <button type="button" className="input-button" onClick={this.handleChange} disabled={true}> C O N V E R T </button>
+          <button type="button" className="input-button" onClick={this.handleChange} disabled={this.props.disabled}> C O N V E R T </button>
         </div>
       );
     }
