@@ -7,7 +7,7 @@
       this.handleClick({ target: { message: message }});
     },
     handleClick: function(event) {
-      dump(event.target.value);
+//      dump(event.target.value);
     },
     render: function() {
       return(

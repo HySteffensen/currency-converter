@@ -11,9 +11,15 @@
         };
       },
       handleChange: function handleChange(event) {
+        var isDisabled;
+        if (event.target.value.length > 0) {
+          isDisabled = false;
+        } else {
+          isDisabled = true;
+        }
         this.setState({
           value: event.target.value,
-          disabled: false
+          disabled: isDisabled
         });
       },
       render: function() {

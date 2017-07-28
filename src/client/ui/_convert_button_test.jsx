@@ -19,6 +19,14 @@
       TestUtils.Simulate.change(input, { target: {value: "foo"} });
       expect((TestUtils.findRenderedDOMComponentWithTag(inputBox, "button").disabled)).to.be(false);
     });
+
+    it("is disabled when user deletes all text", function() {
+      var inputBox = TestUtils.renderIntoDocument(<InputBox />);
+      var input = TestUtils.findRenderedDOMComponentWithTag(inputBox, "input");
+      TestUtils.Simulate.change(input, { target: {value: ""} });
+      expect(TestUtils.findRenderedDOMComponentWithTag(inputBox, "input").value).to.equal("");
+      expect((TestUtils.findRenderedDOMComponentWithTag(inputBox, "button").disabled)).to.be(true);
+    });
   });
 
 })();
