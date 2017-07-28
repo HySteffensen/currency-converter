@@ -6,10 +6,10 @@
   var TestUtils = React.addons.TestUtils;
 
   describe("Convert Button", function() {
-    it.skip("tests staticHTML", function() {
-      var rendered = ReactDOMServer.renderToStaticMarkup(< ConvertButton />);
-      expect(rendered).to.equal('<div><button class="input-button"> C O N V E R T </button></div>');
-      //dump(rendered);
+
+    it("convert button is disabled by default", function() {
+      var field = TestUtils.renderIntoDocument(<ConvertButton />);
+      expect((TestUtils.findRenderedDOMComponentWithTag(field, "button").disabled)).to.be(true);
     });
 
     it.skip("handles change", function() {
