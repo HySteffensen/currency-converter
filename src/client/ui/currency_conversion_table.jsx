@@ -20,7 +20,7 @@
 						  </div>
 						</div>
 						<div>
-							<InputBox name="AMOUNT"/>
+							<InputBox name="AMOUNT" initialValue="" />
 						</div>
           </div>
         );

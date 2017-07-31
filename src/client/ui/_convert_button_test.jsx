@@ -9,7 +9,10 @@
     var inputBox;
 
     beforeEach(function() {
-      inputBox = TestUtils.renderIntoDocument(<InputBox />);
+      inputBox = TestUtils.renderIntoDocument(<InputBox
+        name="AMOUNT"
+        initialValue="123"
+      />);
     });
 
     it("is disabled by default", function() {
