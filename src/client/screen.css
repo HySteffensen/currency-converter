@@ -65,7 +65,6 @@ label {
 	height: 40px;
 	font-size: 20px;
 	color: gray;
-	padding-left: 10px;
 }
 
 .input-button {
@@ -84,4 +83,29 @@ label {
 
 .input-button:disabled {
   background-color: RGB(217, 217, 217);
+}
+
+.bubble {
+  position: relative;
+  width: 290px;
+  height: 40px;
+  padding: 0px;
+  background: RGB(217, 217, 217);
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 5px;
+  margin-top: 25px;
+}
+
+.bubble:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 0 15px 15px;
+  border-color: RGB(217, 217, 217) transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  top: -15px;
+  left: 130px;
 }

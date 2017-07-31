@@ -2,6 +2,7 @@
 	"use strict";
 
     var ConvertButton = require('./convert_button.js');
+    var Bubble = require('./bubble.js');
 
     var InputBox = React.createClass({
       getInitialState: function getInitialState() {
@@ -21,6 +22,7 @@
             <input className="input-box" value={this.state.value} onChange={this.handleChange}></input>
             <br></br>
             <ConvertButton disabled={!this.state.value} />
+            <Bubble />
           </div>
         );
       }
