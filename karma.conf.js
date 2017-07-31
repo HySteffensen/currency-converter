@@ -15,9 +15,10 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+      'generated/client/**/*.js',
+      'src/client/vendor/quixote-0.12.5.js',
       'src/vendor/react-15.3.1.js',
-      'src/vendor/react-with-addons-15.3.1.js',
-      'generated/client/**/*.js'
+      'src/vendor/react-with-addons-15.3.1.js'
     ],
 
 
@@ -30,7 +31,8 @@ module.exports = function(config) {
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
       // be sure not to load the vendor directory! It is not Browserfied so shouldn't be processed.
-      'generated/client/**/*.js': ['commonjs']
+      'generated/client/**/*.js': ['commonjs'],
+      'generated/deploy/vendor/quixote-0.12.5.js': ['commonjs']
     },
 
 
