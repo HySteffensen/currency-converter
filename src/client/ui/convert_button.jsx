@@ -3,9 +3,6 @@
 
 
   var ConvertButton = React.createClass({
-    simulateChange: function simulateChange(message) {
-      this.handleClick({ target: { message: message }});
-    },
     handleClick: function(event) {
 //      dump(event.target.value);
     },

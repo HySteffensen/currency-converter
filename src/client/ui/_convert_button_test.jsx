@@ -11,12 +11,11 @@
     beforeEach(function() {
       inputBox = TestUtils.renderIntoDocument(<InputBox
         name="AMOUNT"
-        initialValue="123"
       />);
     });
 
     it("is disabled by default", function() {
-      expect((TestUtils.findRenderedDOMComponentWithTag(inputBox, "button").disabled)).to.be(true);
+      expect(button()).to.be(true);
     });
 
     it("is enabled when user enters text", function() {

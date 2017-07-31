@@ -10,7 +10,6 @@
     beforeEach(function() {
       field = TestUtils.renderIntoDocument(<InputBox
         name="AMOUNT"
-        initialValue="123"
       />);
     });
 
@@ -19,7 +18,7 @@
     });
 
     it("displays initial value", function() {
-      expect(input().value).to.equal("123");
+      expect(input().value).to.equal("");
     });
 
     it("handles change", function() {
